@@ -46,7 +46,7 @@ Ensure that you have the following installed:
     ```
     cp .env.example .env
     ```
-   Then, open the `.env` file and update the following variables as needed.
+   Then, open the newly created `.env` file and update the following variables as needed. ***Do NOT edit nor USE the `.env.example` file***.
 
 5. **Set up the database**:
    - For guidance on setting up PostgreSQL using pgAdmin, refer to the [pgAdmin documentation](https://www.pgadmin.org/docs/).
@@ -89,7 +89,8 @@ Ensure that you have the following installed:
     ```
     cp .env.example .env.local
     ```
-   Then, open the `.env.local` file and update the following variables as needed:
+   
+   Then, open the newly created `.env.local`.  file and update the following variables as needed:
 
     - **AUTH_SECRET**: Your secret key for authentication.
     
@@ -97,12 +98,12 @@ Ensure that you have the following installed:
     
     - **NEXT_PUBLIC_GEOCODER_KEY**: Your Geocoder API key.
 
-4. **To obtain your Geocoder API key:**
+5. **To obtain your Geocoder API key:**
    - Visit [opencagedata.com](https://opencagedata.com) and create an account.
    - After registering, navigate to the dashboard to generate your API key.
    - Copy the generated API key and paste it into the `NEXT_PUBLIC_GEOCODER_KEY` field in your `.env.local` file.
 
-5. **Start the development server:**
+6. **Start the development server:**
 
     ```
     npm run dev
